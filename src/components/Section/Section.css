@@ -1,0 +1,14 @@
+section {
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    border: solid 2px black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(#e66465, #9198e5);
+}
+h2 {
+    color: black;
+}
