@@ -1,9 +1,13 @@
 import React from 'react'
 import './Statistics.css'
 
-export default function Statistics ({total, good, neutral, bad, positivePercentage}) {
-    return (
-       <>    
+export default function Statistics ({good, neutral, bad}) {
+
+  let total = good + bad + neutral
+  let positivePercentage = Math.trunc(good/total*100)
+
+  return (
+       <>
         <ul>
             <li>
                 <h3>Good: <span>{good}</span></h3>
